@@ -1,2 +1,0 @@
-# PHYS3116_Team
-# T_T
