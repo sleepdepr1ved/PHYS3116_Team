@@ -1,0 +1,23 @@
+Our goal in this part of the project was to examine the rotational behaviour of the Milky Way’s globular cluster system and explore how dynamically distinct or accreted clusters relate to the overall rotation pattern.
+
+We began by plotting each cluster’s line-of-sight velocity against Galactic longitude and fitting a sinusoidal curve (velocity pattern expected from Galactic rotation).
+The sinusoidal form arises from geometry: clusters on the far and near sides of the Galaxy appear to move toward or away from us as the system rotates.
+The fitted curve therefore traces the mean rotational motion of the globular cluster system, with prograde clusters lying close to the curve and retrograde ones falling below it.
+
+Residual velocities were then calculated as the difference between each cluster’s measured velocity and the fitted sinusoid.
+To identify clusters that deviate strongly from this global rotation, we defined rotation outliers as the top 47 clusters with the largest absolute residuals (deterministic Top-K selection).
+This criterion was chosen because it reproduces the same number of outliers obtained from the earlier MAD (Median Absolute Deviation, a robust statistical spread measure) method while remaining fully reproducible between runs.
+The selected outliers represent the most kinematically extreme members of the system.
+
+Next, we applied a positional accretion heuristic, flagging clusters with Galactocentric radius 
+𝑅_𝑔𝑐 > 10 kpc (distance from the Galactic centre) and vertical height 
+∣Z∣>3kpc (height above or below the Galactic plane, derived from the Harris catalogue).
+These outer-halo clusters are likely remnants of dwarf galaxies captured by the Milky Way.
+
+Finally, we overlaid the accreted clusters on the rotation plot.
+Some accreted systems coincide with rotation outliers, while others follow the main rotational trend.
+Conversely, several rotation outliers are not identified as accreted by the positional cut and may instead occupy extreme orbital phases or belong to other substructures.
+
+Overall, this analysis combines kinematic and spatial evidence to connect the Milky Way’s rotation pattern with its hierarchical assembly history, showing that while accretion has contributed significantly to the halo population, it does not fully determine the system’s present-day rotation.
+
+In total we identify 47 rotation outliers, 44 accreted clusters, with 17 in common, and 74 / 143 flagged by either criterion.
